@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:interview_app/injectable/injectable.dart';
-import 'package:interview_app/routing/app_routes.dart';
 import 'package:interview_app/routing/router.dart';
-import 'package:interview_app/src/app/auth_navigation_hellper.dart';
-import 'package:interview_app/src/cubits/auth_status/auth_status_cubit.dart';
+import 'package:interview_app/src/app/auth_navigation_helper.dart';
+import 'package:interview_app/src/presentation/auth_status/auth_status_cubit.dart';
 
 class App extends StatefulWidget {
   const App({super.key});

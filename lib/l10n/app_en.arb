@@ -1,3 +1,6 @@
 {
-  "title": "Hello World!"
+  "search_field_placeholder": "Type the title of the book",
+  "missing_query_message": "Please enter a title to get results.",
+  "title_not_found_message": "Not found results for",
+  "something_went_wrong": "Something went wrong "
 }

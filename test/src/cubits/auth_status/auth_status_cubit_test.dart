@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:interview_app/src/cubits/auth_status/auth_status_cubit.dart';
-import 'package:interview_app/src/repositories/auth_repository/auth_status.dart';
-import 'package:interview_app/src/repositories/auth_repository/i_auth_repositories.dart';
+import 'package:interview_app/src/presentation/auth_status/auth_status_cubit.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/auth_status.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/i_auth_repositories.dart';
 import 'package:rxdart/streams.dart';
 import 'package:rxdart/subjects.dart';
 

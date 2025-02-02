@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:interview_app/src/repositories/auth_repository/auth_status.dart';
-import 'package:interview_app/src/repositories/auth_repository/i_auth_repositories.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/auth_status.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/i_auth_repositories.dart';
 
 part 'auth_status_state.dart';
 part 'auth_status_cubit.freezed.dart';

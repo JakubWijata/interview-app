@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
-import 'package:interview_app/src/app/auth_navigation_hellper.dart';
-import 'package:interview_app/src/cubits/auth_status/auth_status_cubit.dart';
+import 'package:interview_app/src/app/auth_navigation_helper.dart';
+import 'package:interview_app/src/presentation/auth_status/auth_status_cubit.dart';
 import 'package:mockito/mockito.dart';
 import 'package:interview_app/routing/app_routes.dart';
 
@@ -20,7 +20,7 @@ void main() {
     authNavigationHelper
         .navigateBasedOnAuthState(AuthStatusState.authenticated());
 
-    verify(mockRouter.go(AppRoutes.home)).called(1);
+    verify(mockRouter.go(AppRoutes.bookBrowser)).called(1);
   });
 
   test('navigateBasedOnAuthState navigates to login when unauthenticated', () {

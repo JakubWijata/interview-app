@@ -4,8 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 import 'package:interview_app/src/core/failure.dart';
-import 'package:interview_app/src/repositories/auth_repository/auth_status.dart';
-import 'package:interview_app/src/repositories/auth_repository/i_auth_repositories.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/auth_status.dart';
+import 'package:interview_app/src/domain/repositories/auth_repository/i_auth_repositories.dart';
 import 'package:rxdart/rxdart.dart';
 
 @Singleton(as: IAuthRepository)

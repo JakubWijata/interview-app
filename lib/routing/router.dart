@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 import 'package:interview_app/routing/app_routes.dart';
-import 'package:interview_app/src/screens/home_screen.dart';
-import 'package:interview_app/src/screens/sign_in_screen.dart';
-import 'package:interview_app/src/screens/splash_screen.dart';
+import 'package:interview_app/src/presentation/views/book_browser/book_browser_screen.dart';
+import 'package:interview_app/src/presentation/views/sign_in_screen.dart';
+import 'package:interview_app/src/presentation/views/splash_screen.dart';
 
 final router = GoRouter(
   routes: [
@@ -15,8 +15,8 @@ final router = GoRouter(
       builder: (context, state) => SignInScreen(),
     ),
     GoRoute(
-      path: AppRoutes.home,
-      builder: (context, state) => HomeScreen(),
+      path: AppRoutes.bookBrowser,
+      builder: (context, state) => BookBrowser(),
     ),
   ],
 );
