@@ -9,4 +9,8 @@ abstract class IBooksRepository {
     required int page,
     required int pageSize,
   });
+
+  Future<Either<Failure, Unit>> addFavoriteBook(Book book);
+  Future<Either<Failure, Unit>> removeFavoriteBook(Book book);
+  Future<Either<Failure, List<Book>>> getFavoriteBooks();
 }

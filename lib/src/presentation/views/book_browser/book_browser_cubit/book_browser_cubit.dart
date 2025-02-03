@@ -4,8 +4,8 @@ import 'package:fpdart/fpdart.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:interview_app/src/core/failure.dart';
-import 'package:interview_app/src/data/repositories_implementations/books_repository.dart';
 import 'package:interview_app/src/domain/entities/book.dart';
+import 'package:interview_app/src/domain/repositories/books_repository/i_books_repository.dart';
 import 'package:interview_app/src/presentation/views/common/debouncer.dart';
 
 part 'book_browser_state.dart';
@@ -13,17 +13,17 @@ part 'book_browser_cubit.freezed.dart';
 
 @injectable
 class BookBrowserCubit extends Cubit<BookBrowserState> {
-  BookBrowserCubit(this.booksRepository) : super(BookBrowserState.initial());
-
   static const int _initPage = 1;
   static const int _pageSize = 20;
 
-  final BooksRepository booksRepository;
+  final IBooksRepository booksRepository;
   final Debouncer _debouncer = Debouncer(
     duration: Duration(
       milliseconds: 250,
     ),
   );
+
+  BookBrowserCubit(this.booksRepository) : super(BookBrowserState.initial());
 
   Future<void> _searchBooks(String query) async {
     emit(

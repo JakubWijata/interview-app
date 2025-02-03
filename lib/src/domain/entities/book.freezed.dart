@@ -17,7 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$Book {
   String get key => throw _privateConstructorUsedError;
-  List<String> get authorName => throw _privateConstructorUsedError;
+  List<String> get authorNames => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
 
   /// Create a copy of Book
@@ -31,7 +31,7 @@ abstract class $BookCopyWith<$Res> {
   factory $BookCopyWith(Book value, $Res Function(Book) then) =
       _$BookCopyWithImpl<$Res, Book>;
   @useResult
-  $Res call({String key, List<String> authorName, String title});
+  $Res call({String key, List<String> authorNames, String title});
 }
 
 /// @nodoc
@@ -50,7 +50,7 @@ class _$BookCopyWithImpl<$Res, $Val extends Book>
   @override
   $Res call({
     Object? key = null,
-    Object? authorName = null,
+    Object? authorNames = null,
     Object? title = null,
   }) {
     return _then(_value.copyWith(
@@ -58,9 +58,9 @@ class _$BookCopyWithImpl<$Res, $Val extends Book>
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      authorName: null == authorName
-          ? _value.authorName
-          : authorName // ignore: cast_nullable_to_non_nullable
+      authorNames: null == authorNames
+          ? _value.authorNames
+          : authorNames // ignore: cast_nullable_to_non_nullable
               as List<String>,
       title: null == title
           ? _value.title
@@ -77,7 +77,7 @@ abstract class _$$BookImplCopyWith<$Res> implements $BookCopyWith<$Res> {
       __$$BookImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String key, List<String> authorName, String title});
+  $Res call({String key, List<String> authorNames, String title});
 }
 
 /// @nodoc
@@ -93,7 +93,7 @@ class __$$BookImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? key = null,
-    Object? authorName = null,
+    Object? authorNames = null,
     Object? title = null,
   }) {
     return _then(_$BookImpl(
@@ -101,9 +101,9 @@ class __$$BookImplCopyWithImpl<$Res>
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
               as String,
-      authorName: null == authorName
-          ? _value._authorName
-          : authorName // ignore: cast_nullable_to_non_nullable
+      authorNames: null == authorNames
+          ? _value._authorNames
+          : authorNames // ignore: cast_nullable_to_non_nullable
               as List<String>,
       title: null == title
           ? _value.title
@@ -118,18 +118,18 @@ class __$$BookImplCopyWithImpl<$Res>
 class _$BookImpl implements _Book {
   const _$BookImpl(
       {required this.key,
-      required final List<String> authorName,
+      required final List<String> authorNames,
       required this.title})
-      : _authorName = authorName;
+      : _authorNames = authorNames;
 
   @override
   final String key;
-  final List<String> _authorName;
+  final List<String> _authorNames;
   @override
-  List<String> get authorName {
-    if (_authorName is EqualUnmodifiableListView) return _authorName;
+  List<String> get authorNames {
+    if (_authorNames is EqualUnmodifiableListView) return _authorNames;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_authorName);
+    return EqualUnmodifiableListView(_authorNames);
   }
 
   @override
@@ -137,7 +137,7 @@ class _$BookImpl implements _Book {
 
   @override
   String toString() {
-    return 'Book(key: $key, authorName: $authorName, title: $title)';
+    return 'Book(key: $key, authorNames: $authorNames, title: $title)';
   }
 
   @override
@@ -147,13 +147,13 @@ class _$BookImpl implements _Book {
             other is _$BookImpl &&
             (identical(other.key, key) || other.key == key) &&
             const DeepCollectionEquality()
-                .equals(other._authorName, _authorName) &&
+                .equals(other._authorNames, _authorNames) &&
             (identical(other.title, title) || other.title == title));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, key,
-      const DeepCollectionEquality().hash(_authorName), title);
+      const DeepCollectionEquality().hash(_authorNames), title);
 
   /// Create a copy of Book
   /// with the given fields replaced by the non-null parameter values.
@@ -167,13 +167,13 @@ class _$BookImpl implements _Book {
 abstract class _Book implements Book {
   const factory _Book(
       {required final String key,
-      required final List<String> authorName,
+      required final List<String> authorNames,
       required final String title}) = _$BookImpl;
 
   @override
   String get key;
   @override
-  List<String> get authorName;
+  List<String> get authorNames;
   @override
   String get title;
 

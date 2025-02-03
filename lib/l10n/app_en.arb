@@ -1,6 +1,8 @@
 {
+  "app_title":"My Books To Read",
   "search_field_placeholder": "Type the title of the book",
   "missing_query_message": "Please enter a title to get results.",
   "title_not_found_message": "Not found results for",
+  "no_favorite_books_message": "You haven't added any favorite books yet.",
   "something_went_wrong": "Something went wrong "
 }

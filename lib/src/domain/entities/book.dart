@@ -6,7 +6,7 @@ part 'book.freezed.dart';
 class Book with _$Book {
   const factory Book({
     required String key,
-    required List<String> authorName,
+    required List<String> authorNames,
     required String title,
   }) = _Book;
 }

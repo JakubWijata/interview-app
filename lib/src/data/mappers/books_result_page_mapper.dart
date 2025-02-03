@@ -16,8 +16,16 @@ extension BookDTOMapper on BookDTO {
   Book toEntity() {
     return Book(
       title: title,
-      authorName: authorName,
+      authorNames: authorName,
       key: key,
+    );
+  }
+
+  static BookDTO fromEntity(Book entity) {
+    return BookDTO(
+      title: entity.title,
+      authorName: entity.authorNames,
+      key: entity.key,
     );
   }
 }
