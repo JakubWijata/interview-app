@@ -666,16 +666,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
-  mockito:
-    dependency: "direct dev"
-    description:
-      name: mockito
-      sha256: f99d8d072e249f719a5531735d146d8cf04c580d93920b04de75bef6dfb2daf6
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.4.5"
   mocktail:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: mocktail
       sha256: "890df3f9688106f25755f26b1c60589a92b3ab91a22b8b224947ad041bf172d8"
@@ -939,10 +931,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: test_api
-      sha256: "664d3a9a64782fcdeb83ce9c6b39e78fd2971d4e37827b9b06c3aa1edc5e760c"
+      sha256: fb31f383e2ee25fbbfe06b40fe21e1e458d14080e3c67e7ba0acfde4df4e0bbd
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.3"
+    version: "0.7.4"
   test_core:
     dependency: transitive
     description:
